@@ -1,0 +1,27 @@
+# Homophilic benchmark — anomalies are structurally injected.
+dataset:
+  name: cora
+  root: ./data
+  anomaly_ratio: 0.05
+  anomaly_type: structural
+  seed: 0
+
+model:
+  hidden_dim: 256
+  num_heads: 8
+  num_layers: 2
+  dropout: 0.1
+  reward_hidden: 256
+  use_temporal_reward: false
+  structural_extra: 4
+  beta: 0.10
+  gamma: 1.0
+  svi_iterations: 5
+
+training:
+  epochs: 300
+  lr: 1.0e-3
+  weight_decay: 1.0e-4
+  early_stop_patience: 50
+  log_every: 10
+  seed: 0

@@ -1,0 +1,39 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+.venv/
+venv/
+env/
+
+# Distribution / packaging
+build/
+dist/
+*.egg-info/
+*.egg
+
+# IDEs
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Project artifacts
+data/
+experiments/runs/
+experiments/*.json
+experiments/*.jsonl
+*.pdf
+!figure_reward_landscape.pdf
+*.pt
+*.ckpt
+*.log
+
+# Notebooks
+.ipynb_checkpoints/
